@@ -9,11 +9,9 @@ jobs:
     env:
       RAILS_ENV: test
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-      APP_DATABASE_HOST: 127.0.0.1
-      APP_DATABASE_USERNAME: postgres
-      APP_DATABASE_PASSWORD: postgres123
-      TEST_SELENIUM_SERVER: 127.0.0.1
-      TEST_WEB_SERVER: 127.0.0.1
+      DATABASE_HOST: 127.0.0.1
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres123
 
     services:
       db:
